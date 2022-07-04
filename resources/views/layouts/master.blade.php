@@ -7,42 +7,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Development - Zayyah</title>
+    <title>Zayya - Development</title>
     <link rel="stylesheet" href="{{ asset('css\bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ secure_asset('css\bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css\style.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css\bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ secure_asset('css\style.css') }}">
 </head>
 
 {{-- Body --}}
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="/">Z A Y Y A H</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="{{ asset('img/navbar-logo.png') }}" alt="..." height="30">
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link text-center" aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link text-center" href="/about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Products</a>
+                        <a class="nav-link text-center" href="#">Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Search</a>
+                        <a class="nav-link text-center" href="#">Search</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="container-lg my-5">
+
+    <div class="container my-3">
         @yield('content')
     </div>
 
@@ -169,7 +173,7 @@
 
     <!-- Copyright -->
     <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-        © 2022 Copyright Zayyah
+        © 2022 Copyright Zayya
     </div>
     <!-- Copyright -->
 </footer>
