@@ -17,7 +17,7 @@
 {{-- Body --}}
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <div class="container">
             <a class="navbar-brand" href="/">
                 <img src="{{ asset('img/navbar-logo.png') }}" alt="..." height="30">
@@ -30,16 +30,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-center" aria-current="page" href="/">Home</a>
+                        <a class="nav-link text-center fw-bold" aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-center" href="/about">About</a>
+                        <a class="nav-link text-center fw-bold" href="/about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-center" href="#">Products</a>
+                        <a class="nav-link text-center fw-bold" href="#">Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-center" href="#">Search</a>
+                        <a class="nav-link text-center fw-bold" href="#">Search</a>
                     </li>
                 </ul>
             </div>
@@ -56,9 +56,9 @@
 </body>
 
 <!-- Footer -->
-<footer class="text-center text-lg-start bg-light text-muted">
+<footer class="text-center text-lg-start text-muted footer-bg">
     <!-- Section: Social media -->
-    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom footer-bg">
         <!-- Left -->
         <div class="me-5 d-none d-lg-block">
             <span>Get connected with us on social networks:</span>
@@ -91,7 +91,7 @@
     <!-- Section: Social media -->
 
     <!-- Section: Links  -->
-    <section class="">
+    <section class="footer-bg">
         <div class="container text-center text-md-start mt-5">
             <!-- Grid row -->
             <div class="row mt-3">
@@ -172,7 +172,7 @@
     <!-- Section: Links  -->
 
     <!-- Copyright -->
-    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.3); color: white;">
         © 2022 Copyright Zayya
     </div>
     <!-- Copyright -->

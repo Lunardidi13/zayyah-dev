@@ -19,7 +19,7 @@
             @foreach ($items as $i)
                 <div class="col">
                     <div class="card text-center border-0" >
-                        <img src="{{ url('img/'.$i->item_img_path) }}" class="card-img-top" alt="...">
+                        <img src="{{ url('img/'.$i->item_img_path) }}" class="mx-auto d-block" alt="..." height="300vh">
                         <div class="card-body">
                             <h5 class="card-title">{{$i->item_name}}</h5>
                             <p class="card-text">{{$i->item_desc}}</p>

@@ -12,3 +12,44 @@
     height: 40vh;
     object-fit: cover;
 }
+
+.navbar {
+    background-color: #E2FFDD;
+}
+
+.footer-bg {
+    /* background-color: #CCFFCC; */
+    background-color: #0C4933;
+    color: white;
+}
+
+@font-face {
+    font-family: poppins-bold;
+    src: url('/fonts/Poppins-Bold.tff');
+}
+
+@font-face {
+    font-family: poppins-regular;
+    src: url('/fonts/Poppins-Regular.tff');
+}
+
+@font-face {
+    font-family: poppins-semibold;
+    src: url('/fonts/Poppins-SemiBold.tff');
+}
+
+.font-poppins-bold {
+    font-family: "poppins-bold";
+}
+
+body {
+    font-family: 'poppins-regular';
+}
+
+h1 {
+    font-family: 'poppins-bold';
+}
+
+h2 {
+    font-family: 'poppins-bold';
+}
