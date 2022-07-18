@@ -13,18 +13,20 @@
             </p>
         </div>
     </div>
-    <div class="container">
-        <h2 class="text-center">OUR PRODUCTS</h2>
-        <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="container text-center">
+        <h1 class="font-poppins-bold">OUR PRODUCTS</h1>
+    </div>
+    <div class="containter">
+        <div class="row justify-content-around">
             @foreach ($items as $i)
-                <div class="col">
-                    <div class="card text-center border-0" >
-                        <img src="{{ url('img/'.$i->item_img_path) }}" class="mx-auto d-block" alt="..." height="300vh">
-                        <div class="card-body">
-                            <h5 class="card-title">{{$i->item_name}}</h5>
-                            <p class="card-text">{{$i->item_desc}}</p>
+                <div class="col-6 col-lg-4 text-center">
+                    <div class="card h-100 border-0">
+                        <img class="img-thumbnail border-0" src="{{ url('img/' . $i->item_img_path) }}" alt="Card image cap">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title">{{ $i->item_name }}</h5>
+                            <p class="card-text">{{ $i->item_desc }}</p>
                             <div class="container">
-                                <a class="btn btn-dark" href="item/detail/{{$i->item_id}}" role="button">View Product</a>
+                                <a href="item/detail/{{ $i->item_id }}" class="btn btn-dark">View Product</a>
                             </div>
                         </div>
                     </div>
