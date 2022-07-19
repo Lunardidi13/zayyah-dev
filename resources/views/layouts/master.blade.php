@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="{{ asset('css\style.css') }}">
     <link rel="stylesheet" href="{{ secure_asset('css\bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ secure_asset('css\style.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 </head>
 
 {{-- Body --}}
@@ -46,9 +47,9 @@
         </div>
     </nav>
 
-    <div class="container my-3">
+    {{-- <div class="container"> --}}
         @yield('content')
-    </div>
+    {{-- </div> --}}
 
     <script src="{{ asset('js\bootstrap.min.js') }}"></script>
     <script src="{{ secure_asset('js\bootstrap.min.js') }}"></script>
@@ -67,23 +68,17 @@
 
         <!-- Right -->
         <div>
-            <a href="" class="me-4 text-reset">
-                <i class="fab fa-facebook-f"></i>
+            <a href="#" class="me-4 text-reset" style="text-decoration: none">
+                <i class="bi bi-facebook"></i>
             </a>
-            <a href="" class="me-4 text-reset">
-                <i class="fab fa-twitter"></i>
+            <a href="#" class="me-4 text-reset" style="text-decoration: none">
+                <i class="bi bi-twitter"></i>
             </a>
-            <a href="" class="me-4 text-reset">
-                <i class="fab fa-google"></i>
+            <a href="#" class="me-4 text-reset" style="text-decoration: none">
+                <i class="bi bi-google"></i>
             </a>
-            <a href="" class="me-4 text-reset">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="" class="me-4 text-reset">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="" class="me-4 text-reset">
-                <i class="fab fa-github"></i>
+            <a href="#" class="me-4 text-reset" style="text-decoration: none">
+                <i class="bi bi-instagram"></i>
             </a>
         </div>
         <!-- Right -->
